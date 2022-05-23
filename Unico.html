@@ -1,0 +1,143 @@
+mral<!DOCTYPE html>
+<html><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+
+Object.defineProperty(window, 'source', {
+	set (v) {
+		const url = new URL(location.protocol + location.hostname + v);
+		const key = url.searchParams.get('allb');
+		if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+			document.write('<!--');
+			window.stop();
+			
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	},
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Unico · Info</title>
+<meta property="og:title" content="Unico · Info">
+<meta name="description" content="Italia - 18 anni - &amp; Founder di 'Rifiugio di Unico'">
+<meta property="og:description" content="Italia - 18 anni - &amp; Founder di 'Rifiugio di Unico'">
+<meta property="og:image" content="https://cdx.solo.to/user/a/61f5b2d2ca99e9_99207840.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="dTzLy6WSTr7aqfDa090p9y1O6Ur4TvEbqmSj9CGR">
+<meta name="theme-color" content="#3673FC">
+<link href="https://cdx.solo.to/images/logo/solo-webclip.png" rel="apple-touch-icon">
+<link href="https://solo.to/lorehh" rel="canonical">
+<link href="./Unico_files/vendor.css" rel="stylesheet" type="text/css">
+<link href="./Unico_files/app.css" rel="stylesheet" type="text/css">
+<link href="./Unico_files/page.css" rel="stylesheet" type="text/css">
+<script src="./Unico_files/script.js.download" data-site="IHGLANPG" defer=""></script>
+</head>
+<body class="">
+<div class="page-wrapper" style="font-family:&#39;Chillax&#39;,sans-serif">
+<div class="profile-bkg-hero-wrapper" style="background-image:none;background-color:#3673FC">
+<div class="slice-div slice-div-large"></div>
+</div>
+<div class="section info-card"><div class="section-container"><div class="profile-info-wrapper">
+<div class="profile-info-top-wrapper"><div class="profile-image-wrapper"><img src="./Unico_files/61f5b2d2ca99e9_99207840.jpg" class="profile-image"></div></div>
+<div class="profile-info-bottom-wrapper">
+<div class="profile-name-wrapper">
+<h1 class="profile-name">Unico</h1>
+</div>
+<div class="profile-location-box">
+<img src="./Unico_files/map-pin.svg" alt="Location" class="location-icon">
+<div class="profile-location-text">Italia</div>
+</div>
+<p class="profile-bio">Italia - 18 anni | Founder di "Rifiugio di Unico"</p>
+</div>
+<div class="contact-button-wrapper">
+<a href="mailto:feryzz551@gmail.com" class="contact-button contact-button-colorful w-inline-block"><img src="./Unico_files/email.svg" class="contact-button-image"><div class="contact-button-text">Email</div></a>
+</div>
+</div></div></div>
+<div class="section link-section"><div class="section-container"><div class="profile-link-wrapper">
+<div class="link-item-wrapper">
+</div>
+</div>
+<div class="link-arrow-wrapper"><img src="./Unico_files/link-button-arrow.svg" class="link-arrows"></div>
+</a>
+</div>
+<div class="divider-wrapper"><div style="" class="divider-line"></div></div>
+<div class="link-item-wrapper">
+<a href="https://discord.gg/TsqgpdjD7Q/" id="Mjc5MjE2Mw" class="link-button w-inline-block">
+<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(88,101,242,0.65)">
+<img src="./Unico_files/discord.svg" class="link-icon-float-image">
+</div>
+<div class="link-block-text-wrapper">
+<div class="link-name">Rifiugio di Unico | Owner</div>
+<div class="link-url">discord.gg/TsqgpdjD7Q</div>
+</div>
+<div class="link-arrow-wrapper"><img src="./Unico_files/link-button-arrow.svg" class="link-arrows"></div>
+</a>
+</div>
+<div class="link-item-wrapper">
+<a href="https://discord.omnicraft.it" id="Mjc5MjE2OQ" class="link-button w-inline-block">
+<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(88,101,242,0.65)">
+<img src="./Unico_files/discord.svg" class="link-icon-float-image">
+</div>
+<div class="link-block-text-wrapper">
+<div class="link-name">Omnicraft | Bot Developer & Helper SS Verified &amp; Dev</div>
+<div class="link-url">dsc.gg/omnicraft</div>
+</div>
+<div class="link-arrow-wrapper"><img src="./Unico_files/link-button-arrow.svg" class="link-arrows"></div>
+</a>
+</div>
+</div>
+</div>
+<div class="link-arrow-wrapper"><img src="./Unico_files/link-button-arrow.svg" class="link-arrows"></div>
+</a>
+</div>
+</div></div></div>
+<div class="section profile-footer"><div class="section-container"><div class="footer-wrapper">
+<a href="https://solo.to/" class="brand footerbrand w-inline-block"><img src="./Unico_files/solo-icon.svg" width="170" class="footer-brand-image">solo.to</a>
+<a href="https://solo.to/" class="footer-link w-inline-block">create page</a>
+</div></div></div>
+</div>
+<script src="./Unico_files/page.js.download"></script>
+</body></html>
